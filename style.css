@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;800&family=Pangolin&family=Roboto&family=Sacramento&family=Ubuntu&display=swap');
+
+body{
+    
+    background-color: #D3D0CBFF
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.gameContainer{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    margin: 40px 20px 30px;
+}
+.box{
+   
+    border: 2px solid #2E5266FF;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pangolin', cursive;   
+}
+.box:hover{
+    background-color: rgb(240, 233, 215);
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+h1{
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #2E5266FF;;
+}
+.gameInfo span{
+    font-size: 1.5rem;
+    padding: 15px;
+    font-family: 'Pangolin', cursive;
+    
+    
+}
+.gif img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+#btn{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(240, 233, 215);
+    font-family: 'Pangolin', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:1000px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .gameContainer{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+}
